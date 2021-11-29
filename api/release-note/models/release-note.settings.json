@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "release_notes",
+  "info": {
+    "name": "Release Note",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "changes": {
+      "type": "richtext"
+    },
+    "version": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}
